@@ -12,3 +12,5 @@ class Product(Base):
     description = column (String)
     price = column (Float)
     entry_date = column (Integer)
+    availability = column (String)
+    available_quantity = column (Integer)

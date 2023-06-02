@@ -14,7 +14,9 @@ class ProductService():
             brand=product.brand.upper(),
             description=product.description.upper(),
             price=product.price,
-            entry_date=product.entry_date
+            entry_date=product.entry_date,
+            availability = product.availability,
+            available_quantity = product.available_quantity
         )
         self.db.add(new_product)
         self.db.commit()
@@ -32,6 +34,8 @@ class ProductService():
         product.description = data.description
         product.price = data.price
         product.entry_date = data.entry_date
+        product.availability = data.availability
+        product.available_quantity = data.available_quantity
         return
     
     def delete_product(self,id:int):
