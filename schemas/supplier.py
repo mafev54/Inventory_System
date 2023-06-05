@@ -13,11 +13,10 @@ class Config:
     schema_extra = {
         "example":{
             'id':1, 
-            'name':'Chocoramo', 
-            'brand':'Ramo',
-            'desciption': 'Chocoramo is the commercial name given to a rectangular-shaped chocolate-covered cake distributed by the Colombian food company Ramo.',
-            'price': 2200, 
-            'entry_date': '1972 ' 
+            'name':'red bull', 
+            'address':'Red Bull GmbH',
+            'phone': 6017494949,
+            'email': 'recepcion@redbull.com.' 
         }
     }
     

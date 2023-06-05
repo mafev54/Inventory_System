@@ -13,8 +13,8 @@ class Config:
         "example":{
             'id':1, 
             'product_id':1, 
-            'address':2,
-            'purchase_price': 3.4
+            'supplier_id':1,
+            'purchase_price': 5550
+
         }
     }
-    

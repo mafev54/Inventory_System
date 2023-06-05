@@ -30,6 +30,7 @@ class SupplierService():
         supplier.address = data.address
         supplier.phone = data.phone
         supplier.email = data.email
+        self.db.commit()
         return
     
     def delete_supplier(self,id:int):

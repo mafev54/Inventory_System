@@ -36,6 +36,7 @@ class ProductService():
         product.entry_date = data.entry_date
         product.availability = data.availability
         product.available_quantity = data.available_quantity
+        self.db.commit()
         return
     
     def delete_product(self,id:int):

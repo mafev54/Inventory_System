@@ -29,7 +29,7 @@ class SuppliesService():
         supplie.supplier_id = data.supplier_id
         supplie.purchase_price = data.purchase_price
         supplie.product_id = data.product_id
-        
+        self.db.commit()
         return
     
     def delete_supplie(self,id:int):
