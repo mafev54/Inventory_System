@@ -4,15 +4,15 @@
 
 ## Descripción
 
-Este proyecto es un ejemplo de una API RESTful desarrollada con FastAPI que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en un modelo de películas. Está diseñado con un enfoque académico para que los aprendices de programación backend puedan utilizarlo como punto de partida y comenzar a trabajar sobre él.
+This project is an example of a RESTful API developed with FastAPI that allows to perform CRUD (Create, Read, Update, Delete) operations on a movie model. It is designed with an academic approach so that backend programming trainees can use it as a starting point and start working on it.
 
 ## Funcionalidades
 
-- Obtener todas las películas disponibles
-- Obtener una película por su ID
-- Crear una nueva película
-- Actualizar una película existente
-- Eliminar una película
+- Get tables of products, supplier and supplies
+- Get the three tables their ID
+- Create tables of products, supplier, supplies
+- Update tables of products, supplier, supplies 
+- Delete tables of products, supplier, supplies
 
 ## Tecnologías utilizadas
 
@@ -22,49 +22,45 @@ Este proyecto es un ejemplo de una API RESTful desarrollada con FastAPI que perm
 
 ## Instalación
 
-1. Clona este repositorio en tu máquina local:
+1. Clone this repository on your local machine:
+   (cloned from )
 
 git clone git@github.com:JSand89/my-movie-app-c9.git
 
 
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
 
 cd my-movie-app-c9
 
-3. Tu o uno de tus companeros debe cambiar el origen del repositorio 
+3. You or one of your partners should change the source of the repository 
 
 git remote -v
 
 git remote remove origin
 
-git remote add origin <nueva_url_del_repositorio>
+git remote add origin <new_repository_url>.
 
-4. Ahora, tus compañeros deben clonar tu repositorio y tú debes darles permiso para editarlo
+4. Now, your peers must clone your repository and you must give them permission to edit it
 
-Desde el repositorio en GitHub, ve a "Settings" y luego a la sección de "Collaborators" para agregarlos. Esto tiene como objetivo permitirles realizar cambios. No te preocupes, realizaremos este proceso en clase."
+From the repository on GitHub, go to "Settings" and then to the "Collaborators" section to add them. This is to allow them to make changes. Don't worry, we'll go through this process in class."
 
-5. Instala las dependencias necesarias:
+5. Install the required dependencies:
 
 pip install -r requirements.txt
 
 
-## Uso
+## Usage
 
-1. Inicia la aplicación:
+1. Start the application:
 
 uvicorn main:app --reload
 
 
-2. Accede a la documentación de la API en tu navegador:
+2. Access the API documentation in your browser:
 
 http://localhost:8000/docs
 
 
-3. Prueba las diferentes rutas disponibles para realizar operaciones CRUD en las películas.
+3. Try the different paths available to perform CRUD operations on movies.
 
-
-## Contacto
-
-Si tienes alguna pregunta o sugerencia o quieres el workbook para desarrollar este proyecto, no dudes en contactarme en [jsanchez@educamas.com.co](jsanchez@educamas.com.co).
-
-
+end.
