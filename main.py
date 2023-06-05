@@ -6,8 +6,8 @@ from config.database import engine,Base
 
 from middlewares.error_handler import Errorhandler
 from routers.product import product_router
-#from routers.genres import genres_router
-
+from routers.supplier import supplier_router
+from routers.supplies import supplie_router
 
 
 app = FastAPI()
@@ -16,8 +16,8 @@ app.version = "0.0.1"
 
 app.add_middleware(Errorhandler)
 app.include_router(product_router)
-#app.include_router(genres_router)
-
+app.include_router(supplier_router)
+app.include_router(supplie_router)
 
 Base.metadata.create_all(bind=engine)
 

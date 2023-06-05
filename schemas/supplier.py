@@ -4,9 +4,9 @@ from typing import Optional
 class Supplier(BaseModel):
     id: Optional[int]= None
     name :str = Field (max_length= 40, min_length=2, description="Supplier name")
-    address : str = Field (max_length=40, min_length=2, description = "the brand and product name")
-    phone : int = Field(ge=1, description="llave foranea de pelicula")
-    email : str = Field (max_length=40, min_length=2, description = "the brand and product name")
+    address : str = Field (max_length=40, min_length=2, description = "address of the supplier")
+    phone : int = Field(ge=1, description="phone of supplier")
+    email : str = Field (max_length=40, min_length=2, description = "email of supplier")
 
 
 class Config: 

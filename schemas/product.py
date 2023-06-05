@@ -5,12 +5,12 @@ from typing import Optional
 class Product (BaseModel):
     id: Optional[int] = None
     name: str = Field(max_length=40, min_length=2, description="product name")
-    brand: str = Field(max_length=40, min_length=2, description="the brand and product name")
+    brand: str = Field(max_length=40, min_length=2, description="brand name")
     description: str = Field(max_length=200, min_length=5, description="product description")
-    price: float = Field(ge=100, le=None)
-    entry_date: str = Field(max_length=60, min_length=5, description="maximum delivery date of products")
-    availability: str = Field(max_length=60, min_length=5, description="maximum delivery date of products")
-    available_quantity: int = Field(ge=100, le=None)
+    price: float = Field(ge=100, le=None, description="price")
+    entry_date: str = Field(max_length=60, min_length=5, description="entry date of products")
+    availability: str = Field(max_length=60, min_length=5, description="if it is or not avaliability")
+    available_quantity: int = Field(ge=100, le=None, description="quantity available")
 
 class Config:
     schema_extra = {

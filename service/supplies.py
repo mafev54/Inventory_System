@@ -10,7 +10,9 @@ class SuppliesService():
     
     def create_supplie(self, supplie: SuppliesModel):
         new_supplie = SuppliesModel(
-            purchase_price=supplie.purchase_price
+            purchase_price=supplie.purchase_price,
+            supplier_id = supplie.supplier_id,
+            product_id = supplie.product_id
         )
         self.db.add(new_supplie)
         self.db.commit()
@@ -22,8 +24,16 @@ class SuppliesService():
         result = self.db.query(SuppliesModel).filter(SuppliesModel.id == id).first()
         return result
     
-    def update_supplie(self,data):
-        supplie = self.db.query(SuppliesModel).filter(SuppliesModel.id == data.id).first()
+    def update_supplie(self, id : int, data):
+        supplie = self.db.query(SuppliesModel).filter(SuppliesModel.id == id).first()
+        supplie.supplier_id = data.supplier_id
         supplie.purchase_price = data.purchase_price
+        supplie.product_id = data.product_id
+        
+        return
+    
+    def delete_supplie(self,id:int):
+        self.db.query(SuppliesModel).filter(SuppliesModel.id == id).delete()
+        self.db.commit()
         return
     

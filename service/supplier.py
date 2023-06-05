@@ -24,7 +24,7 @@ class SupplierService():
         result = self.db.query(SupplierModel).filter(SupplierModel.id == id).first()
         return result
     
-    def update_rating(self,data):
+    def update_supplier(self,data):
         supplier = self.db.query(SupplierModel).filter(SupplierModel.id == data.id).first()
         supplier.name = data.name
         supplier.address = data.address
@@ -32,7 +32,7 @@ class SupplierService():
         supplier.email = data.email
         return
     
-    def delete_genre(self,id:int):
+    def delete_supplier(self,id:int):
         self.db.query(SupplierModel).filter(SupplierModel.id == id).delete()
         self.db.commit()
         return
