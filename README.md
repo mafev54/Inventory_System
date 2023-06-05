@@ -1,12 +1,12 @@
-# Proyecto de CRUD de Películas - FastAPI
+# Project Inventory System- FastAPI
 
 <img src="img/programate-academy.png" alt="Logo Programate">
 
-## Descripción
+## Description
 
 This project is an example of a RESTful API developed with FastAPI that allows to perform CRUD (Create, Read, Update, Delete) operations on a movie model. It is designed with an academic approach so that backend programming trainees can use it as a starting point and start working on it.
 
-## Funcionalidades
+## Functionalities
 
 - Get tables of products, supplier and supplies
 - Get the three tables their ID
@@ -14,13 +14,13 @@ This project is an example of a RESTful API developed with FastAPI that allows t
 - Update tables of products, supplier, supplies 
 - Delete tables of products, supplier, supplies
 
-## Tecnologías utilizadas
+##  Technologies used
 
 - Python
 - FastAPI
 - Pydantic
 
-## Instalación
+## Installation
 
 1. Clone this repository on your local machine:
    (cloned from )
