@@ -9,14 +9,14 @@ class Supplier(BaseModel):
     email : str = Field (max_length=40, min_length=2, description = "email of supplier")
 
 
-class Config: 
-    schema_extra = {
-        "example":{
-            'id':1, 
-            'name':'red bull', 
-            'address':'Red Bull GmbH',
-            'phone': 6017494949,
-            'email': 'recepcion@redbull.com.' 
+    class Config: 
+        schema_extra = {
+            "example":{
+                'id':1, 
+                'name':'red bull', 
+                'address':'Red Bull GmbH',
+                'phone': 6017494949,
+                'email': 'recepcion@redbull.com.' 
         }
     }
     

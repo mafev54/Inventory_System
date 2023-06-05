@@ -17,7 +17,6 @@ class SupplierService():
         )
         self.db.add(new_supplier)
         self.db.commit()
-        self.db.refresh
         return
     
     def get_for_id(self, id:int):

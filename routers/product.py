@@ -9,10 +9,11 @@ from config.database import Session
 
 product_router = APIRouter()
 
-@product_router.get('/product_hello/', tags=['product'], status_code=200)
-def get_product_hello():
-    #funcion to check the route
-    return HTMLResponse('<h1>Hello from the product route</h1>1')
+@product_router.post('/product/',tags=['product'], status_code=201)
+def create_product(product:Product):
+    db = Session()
+    ProductService(db).create_product(product)
+    return JSONResponse(content={"message":"product created successfully",'status_code':201})
 
 @product_router.get('/product/', tags = ['product'], status_code=200)
 def get_product():
@@ -25,12 +26,6 @@ def get_product_for_id(id:int):
     db = Session()
     result = ProductService(db).get_for_id(id)
     return JSONResponse(content=jsonable_encoder(result), status_code= 200)
-
-@product_router.post('/product/',tags=['product'], status_code=201)
-def create_product(product:Product):
-    db = Session()
-    ProductService(db).create_product(product)
-    return JSONResponse(content={"message":"product created successfully",'status_code':201})
 
 @product_router.put('/product{id}/',tags=['product'])
 def update_product(id:int,data:Product):

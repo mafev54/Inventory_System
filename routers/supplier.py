@@ -8,11 +8,6 @@ from config.database import Session
 
 supplier_router = APIRouter()
 
-@supplier_router.get('/supplier_hello', tags=['supplier'], status_code=200)
-def get_supplier_hello():
-    #funcion to check the route
-    return HTMLResponse('<h1>Hello from the supplier route</h1>1')
-
 @supplier_router.get('/supplier', tags = ['supplier'], status_code=200)
 def get_supplier():
     db = Session()

@@ -19,8 +19,7 @@ class ProductService():
             available_quantity = product.available_quantity
         )
         self.db.add(new_product)
-        self.db.commit()
-        self.db.refresh
+        self.db.commit()  
         return
     
     def get_for_id(self, id:int):
