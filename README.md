@@ -1,7 +1,5 @@
 # Project Inventory System- FastAPI
 
-<img src="img/programate-academy.png" alt="Logo Programate">
-
 ## Description
 
 This project is an example of a RESTful API developed with FastAPI that allows to perform CRUD (Create, Read, Update, Delete) operations on a movie model. It is designed with an academic approach so that backend programming trainees can use it as a starting point and start working on it.
