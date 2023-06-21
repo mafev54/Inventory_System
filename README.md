@@ -1,64 +1,64 @@
 # Project Inventory System- FastAPI
 
-## Description
+## Descripción
 
-This project is an example of a RESTful API developed with FastAPI that allows to perform CRUD (Create, Read, Update, Delete) operations on a movie model. It is designed with an academic approach so that backend programming trainees can use it as a starting point and start working on it.
+Este proyecto es un ejemplo de una API RESTful desarrollada con FastAPI que permite realizar operaciones CRUD (Create, Read, Update, Delete) sobre un modelo de películas. Está diseñado con un enfoque académico para que los aprendices de programación backend puedan utilizarlo como punto de partida y empezar a trabajar en él.
 
-## Functionalities
+## Funcionalidades
 
-- Get tables of products, supplier and supplies
-- Get the three tables their ID
-- Create tables of products, supplier, supplies
-- Update tables of products, supplier, supplies 
-- Delete tables of products, supplier, supplies
+- Obtener las tablas de productos, proveedor y suministros
+- Obtener el ID de las tres tablas
+- Crear tablas de productos, proveedores y suministros
+- Actualizar tablas de productos, proveedores y suministros 
+- Borrar tablas de productos, proveedores y suministros
 
-##  Technologies used
+## Tecnologías utilizadas
 
 - Python
 - FastAPI
 - Pydantic
 
-## Installation
+## Instalación
 
-1. Clone this repository on your local machine:
-   (cloned from )
+1. Clone este repositorio en su máquina local:
+   (clonado desde )
 
 git clone git@github.com:JSand89/my-movie-app-c9.git
 
 
-2. Navigate to the project directory:
+2. Navega hasta el directorio del proyecto:
 
-cd my-movie-app-c9
+cd mi-pelicula-app-c9
 
-3. You or one of your partners should change the source of the repository 
+3. Tú o uno de tus compañeros deberíais cambiar la fuente del repositorio 
 
 git remote -v
 
-git remote remove origin
+git remote remove origen
 
-git remote add origin <new_repository_url>.
+git remote add origen <nueva_url_del_repositorio>.
 
-4. Now, your peers must clone your repository and you must give them permission to edit it
+4. Ahora, tus compañeros deben clonar tu repositorio y tú debes darles permiso para editarlo
 
-From the repository on GitHub, go to "Settings" and then to the "Collaborators" section to add them. This is to allow them to make changes. Don't worry, we'll go through this process in class."
+Desde el repositorio en GitHub, ve a "Configuración" y luego a la sección "Colaboradores" para añadirlos. Esto es para permitirles hacer cambios. No te preocupes, haremos este proceso en clase".
 
-5. Install the required dependencies:
+5. Instala las dependencias necesarias:
 
 pip install -r requirements.txt
 
 
-## Usage
+## Uso
 
-1. Start the application:
+1. Inicie la aplicación:
 
 uvicorn main:app --reload
 
 
-2. Access the API documentation in your browser:
+2. Accede a la documentación de la API en tu navegador:
 
 http://localhost:8000/docs
 
 
-3. Try the different paths available to perform CRUD operations on movies.
+3. Prueba las diferentes rutas disponibles para realizar operaciones CRUD sobre las películas.
 
-end.
+fin.
